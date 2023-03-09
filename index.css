@@ -456,6 +456,20 @@ button {
   display: flex;
   overflow: hidden;
   position: relative;
+  animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  from{
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.03);
+  } 
+  to{
+    transform: scale(1);
+  } 
+
 }
 
 .product-card:hover {
