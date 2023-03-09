@@ -43,8 +43,6 @@ const renderFilteredProducts = (checkedSellers, minPrice, maxPrice) => {
       return true;
     }
   });
-  console.log(checkedSellers);
-  console.log(productsInRangeOfPrice);
 
   const filteredProducts = products.filter((product) => {
     if (checkedSellers.length) {
@@ -65,7 +63,6 @@ const renderFilteredProducts = (checkedSellers, minPrice, maxPrice) => {
 
 const handleSubmitFilter = (event) => {
   event.preventDefault();
-  console.log(event);
 
   let checkedSellers = [];
   let minPrice = 0;
@@ -101,10 +98,12 @@ const handlePriceInput = () => {
   }
 };
 
-resetFormButton.addEventListener("click", () => renderAllProducts());
+resetFormButton.addEventListener("click", () => {
+  productsContainer.innerHTML = "";
+  renderAllProducts();
+});
 minPriceInput.addEventListener("input", handlePriceInput);
 maxPriceInput.addEventListener("input", handlePriceInput);
 formElement.addEventListener("submit", handleSubmitFilter);
-
 
 renderAllProducts();
