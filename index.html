@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://s03.appmifile.com/favicon.ico">
+    <link rel="stylesheet" href="./index.css">
+    <title>Productos Tienda Mi</title>
+</head>
+
+<body>
+    <section class="site-slide-menu">
+        <input type="checkbox" class="menu-check" id="menu-check" value="0">
+        <div class="site-slide-menu-wrapper">
+            <div class="site-slide-menu-card">
+                <div class="menu-header">
+                    <label for="menu-check" class="menu-close" role="button" tabindex="0">
+                        <i class="menu-btn-close"></i>
+                    </label>
+                </div>
+                <div class="menu-content">
+                    <a href="" class="content-user">
+                        <div class="user-info">
+                            <div class="user-info-avatar"></div>
+                            <span class="user-info-nickname">Iniciar sesión/Registrarse</span>
+                        </div>
+                        <i class="icon-forward"></i>
+                    </a>
+                    <nav class="content-navigation-main">
+                        <ul>
+                            <li class="nav-link-item">
+                                <a href="" class="nav-link">
+                                    Tienda
+                                    <i class="icon-forward"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-link-item">
+                                <a href="" class="nav-link">
+                                    Smartphone
+                                    <i class="icon-more"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-link-item">
+                                <a href="" class="nav-link">
+                                    Smart Home
+                                    <i class="icon-more"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-link-item">
+                                <a href="" class="nav-link">
+                                    Estilo de vida
+                                    <i class="icon-more"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-link-item">
+                                <a href="" class="nav-link">
+                                    Explorar
+                                    <i class="icon-forward"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-link-item">
+                                <a href="" class="nav-link">
+                                    Ayuda
+                                    <i class="icon-forward"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="content-navigation-footer">
+                        <ul class="navigation-footer-list">
+                            <li class="navigation-footer-item">
+                                SOPORTE
+                                <i class="icon-more"></i>
+                            </li>
+                            <li class="navigation-footer-item">
+                                COMPRA Y APRENDE
+                                <i class="icon-more"></i>
+                            </li>
+                            <li class="navigation-footer-item">
+                                SOBRE NOSOTROS
+                                <i class="icon-more"></i>
+                            </li>
+                            <li class="navigation-footer-item">
+                                CONTACTO
+                                <i class="icon-more"></i>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="site-header">
+        <nav class="navigation">
+            <div class="logo">
+                <a class="logo-link" href="#">
+                    <img src="https://i01.appmifile.com/webfile/globalimg/logo/pwa-mi/144x144.png" alt="logo">
+                </a>
+            </div>
+
+            <ul class="navigation-group navigation-menu">
+                <li class="navigation-item">
+                    <a href="">Tienda</a>
+                </li>
+                <li class="navigation-item smartphone">
+                    <a href="#">Smartphone</a>
+                </li>
+                <li class="navigation-item smarthome">
+                    <a href="">Smart Home</a>
+                </li>
+                <li class="navigation-item lifestyle">
+                    <a href="">Estilo de vida</a>
+                </li>
+            </ul>
+
+            <div class="navigation-separator">
+
+            </div>
+
+            <ul class="navigation-group navigation-aside">
+                <li class="navigation-item">
+                    <a href="">Explorar</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="">Ayuda</a>
+                </li>
+            </ul>
+            <ul class="navigation-group navigation-shortcut">
+                <li class="navigation-item">
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios/28/191919/search--v1.png" alt="search">
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#">
+                        <img src="https://img.icons8.com/pastel-glyph/28/191919/shopping-trolley--v2.png"
+                            alt="shopcart">
+                    </a>
+                </li>
+                <li class="navigation-item" id="menu-icon">
+                    <label for="menu-check" class="menu-open" role="button" tabindex="0">
+                        <i class="menu-btn-open"></i>
+                    </label>
+                </li>
+                <li class="navigation-item">
+                    <a href="#">
+                        <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/28/191919/external-user-user-tanah-basah-basic-outline-tanah-basah-7.png"
+                            alt="user">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="filters">
+                <form action="./main.js" method="get" class="form">
+                    <div class="sellers-container">
+                        <label class="sellers-label" for="sellers-filter">Vendido por</label>
+                        <ul class="sellers-list">
+                            <li>
+                                <label for="Xiaomi-cb">
+                                    <input type="checkbox" name="Xiaomi" id="Xiaomi-cb" value="Xiaomi">
+                                    Xiaomi
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Amazon-cb">
+                                    <input type="checkbox" name="Amazon" id="Amazon-cb" value="Amazon">
+                                    Amazon
+                                </label>
+                            </li>
+                            <li>
+                                <label for="AliExpress-cb">
+                                    <input type="checkbox" name="AliExpress" id="AliExpress-cb" value="AliExpress">
+                                    AliExpress
+                                </label>
+                            </li>
+                            <li>
+                                <label for="PcComponentes-cb">
+                                    <input type="checkbox" name="PcComponentes" id="PcComponentes-cb" value="PcComponentes">
+                                    PcComponentes
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-container">
+                        <label class="price-label" for="price-filter">Precio</label>
+                        <div class="price-filter-container">
+                            <input type="number" min="0" id="price-filter-min" placeholder="Mín.">
+                            <span>-</span>
+                            <input type="number" min="0" id="price-filter-max" placeholder="Máx.">
+                        </div>
+                    </div>
+                    <div class="submit-reset-container">
+                        <input class="submit" type="submit" value="FILTRAR"/>
+                        <button class="reset-form-btn" type="reset">Limpiar filtros</button>
+                    </div>
+                </form>
+            </div>
+            <ul class="products-container">
+            </ul>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-container">
+            <section class="site-footer-main">
+                <nav class="site-footer-nav">
+                    <div class="nav-column">
+                        <h3 class="site-footer-title">SOPORTE</h3>
+                        <ul class="column-section-list">
+                            <li class="column-section-item">
+                                <a href="">Servicios</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Seguimiento del orden de servicio</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Términos y Condiciones</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Guías de usuario</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Canjear el cupón</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Aviso de Garantía de Xiaomi</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Aviso de seguridad del scooter</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">AlwaysNext</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Preguntas frecuentes</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Mi Points FAQ</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">SERVICIOS EXCLUSIVOS</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Canje</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h3 class="site-footer-title">COMPRA Y APRENDE</h3>
+                        <ul class="column-section-list">
+                            <li class="column-section-item">
+                                <a href="">Teléfonos Reacondicionados</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">DECLARACIÓN DE CONFORMIDAD DE LA UE</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Partner</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Xiaomi para empresas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h3 class="site-footer-title">SOBRE NOSOTROS</h3>
+                        <ul class="column-section-list">
+                            <li class="column-section-item">
+                                <a href="">Xiaomi</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Cultura</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Política de privacidad</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Integridad y cumplimiento</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Trust Center</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Accesibilidad de Xiaomi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h3 class="site-footer-title">CONTACTO</h3>
+                        <ul class="column-section-list">
+                            <li class="column-section-item">
+                                <a href="">Correo electrónico</a>
+                            </li>
+                            <li class="column-section-item">
+                                <a href="">Equipo líder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="site-footer-aside">
+                    <div class="site-footer-follow">
+                        <h3 class="site-footer-title">SÍGUENOS</h3>
+                        <ul class="site-footer-follow-list">
+                            <li class="site-footer-follow-item">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="#191919"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="site-footer-follow-item">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="#191919"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="site-footer-follow-item">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-brand-tiktok" width="32" height="32"
+                                        viewBox="0 0 24 24" stroke-width="3" stroke="#191919" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="site-footer-follow-item">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256" width="28px"
+                                        height="28px" fill-rule="nonzero">
+                                        <g fill="#191919" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(8.53333,8.53333)">
+                                                <path
+                                                    d="M15,4c-4.186,0 -9.61914,1.04883 -9.61914,1.04883l-0.01367,0.01563c-1.90652,0.30491 -3.36719,1.94317 -3.36719,3.93555v6v0.00195v5.99805v0.00195c0.00384,1.96564 1.4353,3.63719 3.37695,3.94336l0.00391,0.00586c0,0 5.43314,1.05078 9.61914,1.05078c4.186,0 9.61914,-1.05078 9.61914,-1.05078l0.00195,-0.00195c1.94389,-0.30554 3.37683,-1.97951 3.37891,-3.94727v-0.00195v-5.99805v-0.00195v-6c-0.00288,-1.96638 -1.43457,-3.63903 -3.37695,-3.94531l-0.00391,-0.00586c0,0 -5.43314,-1.04883 -9.61914,-1.04883zM12,10.39844l8,4.60156l-8,4.60156z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-footer-connect">
+                        <h3 class="site-footer-title">Estamos en contacto</h3>
+                        <div class="site-footer-form">
+                            <div class="site-footer-input">
+                                <input type="email" name="email"
+                                    placeholder="Introduce la dirección de correo electrónico"">
+                                <button>
+                                    <img src=" https://img.icons8.com/material-rounded/24/ffffff/more-than.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-footer-app-wrapper original">
+                        <div class="footer-app-mi-store">
+                            <div class="store-qr-code">
+                                <img src="https://i05.appmifile.com/214_operator_es/17/01/2022/6c3db017c6ef60c480756b700f4ddb91.png"
+                                    alt="qr-code">
+                            </div>
+                            <div class="store-content">
+                                <h3 class="site-footer-title">Consigue la app en la Mi Store</h3>
+                                <p class="store-content-description">Aprovecha nuestra información actualizada para
+                                    una mejor experiencia de compra</p>
+                            </div>
+                        </div>
+                        <div class="footer-app-play-store">
+                            <a href="https://www.mi.com/es/appdownload/" rel="noopener" class="play-store-link">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/google-play-icon-logo.svg"
+                                    alt="play-store">
+                                <span>Descárgala en google play</span>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+            <section class="site-footer-footer">
+                <div class="site-footer-legal">
+                    <span>Copyright © 2010 - 2023 Xiaomi. All Rights Reserved ~ by Oleksandr Yatsentyuk 🤘🏻</span>
+                </div>
+                <div class="site-footer-settings">
+                    <div class="site-footer-cookies">
+                        <a href="">Política de cookies</a>
+                    </div>
+                    <div class="site-footer-locale">
+                        <a href="" class="locale-link">Spain / España</a>
+                        <a href="" class="locale-link-img">
+                            <img src="https://img.icons8.com/material-outlined/25/ffffff/geography.png" alt="world" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-app-mi-store copy-for-query">
+                    <div class="store-qr-code">
+                        <img src="https://i05.appmifile.com/214_operator_es/17/01/2022/6c3db017c6ef60c480756b700f4ddb91.png"
+                            alt="qr-code">
+                    </div>
+                    <div class="store-content">
+                        <h3 class="site-footer-title">Consigue la app en la Mi Store</h3>
+                        <p class="store-content-description">Aprovecha nuestra información actualizada para
+                            una mejor experiencia de compra</p>
+                    </div>
+                </div>
+                <div class="footer-app-play-store-query-min">
+                    <h3 class="site-footer-title">Consigue la app en la Mi Store</h3>
+                    <a href="https://www.mi.com/es/appdownload/" rel="noopener" class="play-store-link">
+                        <img src="https://i01.appmifile.com/webfile/globalimg/google-play-icon-logo.svg"
+                            alt="play-store">
+                        <span>Descárgala en google play</span>
+                    </a>
+                </div>
+            </div>
+            </section>
+        </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
